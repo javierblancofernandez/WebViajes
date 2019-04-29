@@ -1,0 +1,43 @@
+.container{
+    width:100%;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding:20% 0;
+    background-image: url('/imagenes/isla.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    .isla{
+
+        text-align: left;
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:2.3em;
+            margin:0%;
+            color:white;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1.5em;
+            font-weight: lighter; 
+            margin-top:0%;
+            color:white;
+        }
+        .boton{
+           width:100%;
+           text-align: center;
+            button{
+                width:45%;
+                height: 2.5em;
+                background-color: yellow;
+                border:yellow;
+                font-family: Arial, Helvetica, sans-serif, Times, serif;
+                font-style: oblique;
+            }
+        }
+        
+        
+    }
+}
