@@ -7,6 +7,7 @@
     align-items: center;
     width: 75%;
     height: 75%;
+    text-decoration: none;
    
 
     h2 {
@@ -23,7 +24,7 @@
         font-style: italic;
     }
 
-    button {
+    .button {
         padding: .5em 1.5em .5em 1.5em;
         font-size: .6em;
         font-style: italic;
@@ -33,6 +34,7 @@
     }
 
     p {
+        
         margin-top: .6em;
         color: white;
         font-style: italic;

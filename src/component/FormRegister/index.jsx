@@ -1,19 +1,19 @@
 import React from 'react';
 import './formRegister.scss';
 
-class FormRegister extends React.Component {
+function FormRegister (props) {
     
-    render() {
-        console.log(this.props)
+   
+        console.log(props)
         return (
         
-                <form className="authForm">
-                <h2>{this.props.texto}</h2>
-                    {this.props.children}
+                <form className="authForm" onSubmit={props.onSubmit}>
+                <h2>{props.text}</h2>
+                    {props.children}
                 </form>
             
         );
-    }
+    
 }
 
 export default FormRegister;
