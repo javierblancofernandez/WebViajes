@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../img/iconoweb.png';
+import { NavLink } from 'react-router-dom';
 import './menu.scss'
 import IconRedes from '../../component/iconRedes/IconRedes'
 
@@ -15,9 +16,9 @@ class Menu extends React.Component {
                     </figcaption>
                 </div>
                 <div className="destinos">
-                    <a href="#destinos">Destinos</a>
-                    <a href="#aboutUs">Quienes somos</a>
-                    <a href="#Donde">Donde Estamos</a>
+                    <NavLink to="/"><a href="#destinos">Destinos</a></NavLink>
+                    <NavLink to="/"><a href="#quienessomos">Quienes somos</a></NavLink>
+                    <NavLink to="/"><a href="#Donde">Donde Estamos</a></NavLink>
                 </div>
                 <div className="redes">
                     <IconRedes />

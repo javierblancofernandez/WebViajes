@@ -1,37 +1,24 @@
-.viaje {
-    position: relative;
-    width: 20em;
-
-    &-img {
-        width: 20em;
+.travel-container{
+    margin: auto;
+    width: 20%;
+    .travel-foto{
+        padding-bottom: 50%;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        .offer{
+            background-color: #141939;
+            color: white;
+            width: 70%;
+            text-align: center;
+        }
+        .precio{
+            background-color: yellow;
+            width: 30%;
+            text-align: center;
+        }
     }
-
-    &-offer {
-        position: absolute;
-        font-size: 1.26em;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        padding: 1em;
-        background-color: #19203a;
-        color: white;
-    }
-
-    &-price {
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        left: 7.2em;
-        padding: 1em;
-        font-size: 1.75em;
-        background-color: #ffef41;
-        font-weight: bold;
-
-    }
-
-    &-name {
+    .nombre{
         text-align: center;
-        padding: 1em;
-        font-weight: bold;
     }
 }

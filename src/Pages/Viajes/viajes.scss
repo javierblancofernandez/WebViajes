@@ -1,8 +1,18 @@
-.travels-container {
-    height: 85vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+// .travels-container {
+//     height: 85vh;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     justify-items: center;
+//     align-items: center;
+//   }
+  .row1{
+    margin-top:10vh;
+    display:flex;
+    flex-direction:row
+  }
+  .row2{
+    margin-top:10vh;
+    display:flex;
+    flex-direction:row
   }
