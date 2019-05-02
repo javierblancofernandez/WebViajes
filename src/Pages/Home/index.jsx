@@ -15,23 +15,43 @@ class Home extends React.Component {
                 <div className="travels">
                 <div className="row1">
                 <Viaje
-                    price="130"
+                    price="500€"
                     offer="New York"
                     imgUrl="new_york.jpg"
-                    name="newYork"
+                    name="New York"
                 />
-                <Viaje />
-                <Viaje />
+                <Viaje 
+                price="800€"
+                offer="Beijing"
+                imgUrl="beijing.jpg"
+                name="Beijing"
+                />
+                <Viaje 
+                price="600€"
+                    offer="Buenos Aires"
+                    imgUrl="buenos_aires.jpg"
+                    name="Buenos Aires"
+                    />
             </div>
             <div className="row2">
             <Viaje
-                    price="130"
-                    offer="New York"
-                    imgUrl="new_york.jpg"
-                    name="newYork"
+                    price="200€"
+                    offer="Madrid"
+                    imgUrl="madrid.jpg"
+                    name="Madrid"
                 />
-                <Viaje />
-                <Viaje />
+                <Viaje 
+                price="1000€"
+                offer="Tokio"
+                imgUrl="tokyo.jpg"
+                name="Tokio"
+                />
+                <Viaje 
+                price="500€"
+                offer="Ciudad Mexico"
+                imgUrl="ciudad_mexico.jpg"
+                name="Ciudad Mexico"
+                />
             </div>
 
                 </div>

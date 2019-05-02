@@ -6,17 +6,20 @@
         display: flex;
         flex-direction: row;
         margin: auto;
+        .precio{
+            background-color: yellow;
+            width: 30%;
+            height:50%;
+            font-weight: bold;
+            text-align: center;
+        }
         .offer{
             background-color: #141939;
             color: white;
             width: 70%;
             text-align: center;
         }
-        .precio{
-            background-color: yellow;
-            width: 30%;
-            text-align: center;
-        }
+        
     }
     .nombre{
         text-align: center;

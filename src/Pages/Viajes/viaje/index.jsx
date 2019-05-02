@@ -2,7 +2,7 @@ import React from 'react';
 
 import './viaje.scss'
 function Viaje(props) {
-
+    console.log(props);
     const styleImg = {
         backgroundImage: `url('/imagenes/${props.imgUrl}')`,
         backgroundRepeat: 'no repeat',
@@ -15,12 +15,11 @@ function Viaje(props) {
     return (
         <div className="travel-container">
             <div className="travel-foto" style={styleImg}>
-
-                <div className="precio" >
-                    <p>{props.price}</p>
-                </div>
                 <div className="offer">
                     <p>{props.offer}</p>
+                </div>
+                <div className="precio" >
+                    <p>{props.price}</p>
                 </div>
             </div>
             <div className="nombre">
