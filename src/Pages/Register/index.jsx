@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useName from '../../Hooks/useName';
 import { Link } from 'react-router-dom';
 import FormRegister from '../../component/FormRegister';
+import axios from 'axios';
 import './register.scss';
 
 function Register(props) {
@@ -19,10 +20,15 @@ function Register(props) {
             password,
             email
         }
+        axios.post('http://localhost:8080/user/',body).then(res=>{
+            console.log(res.headers.authorization)
+            localStorage.setItem('authorization',res.headers.authorization);
+        }).catch(console.error)
+        
     }
 
     const comparacion = () => {
-        if (password !== repassword) {
+        if (password != repassword) {
             alert('el password no coincide')
 
         }
