@@ -12,13 +12,17 @@ class Menu extends React.Component {
                 <div className="logo">
                     <img src={logo} alt="logo" className="logo-img" />
                     <figcaption className="logo-name">
-                       Viajes
+                        Viajes
                     </figcaption>
                 </div>
                 <div className="destinos">
                     <NavLink to="/"><a href="#destinos">Destinos</a></NavLink>
                     <NavLink to="/"><a href="#quienessomos">Quienes somos</a></NavLink>
                     <NavLink to="/"><a href="#Donde">Donde Estamos</a></NavLink>
+
+                    <NavLink to="/login"><a href="#Login">LoginIn</a></NavLink>
+                    <a href="#Login">LoginOut</a>
+
                 </div>
                 <div className="redes">
                     <IconRedes />

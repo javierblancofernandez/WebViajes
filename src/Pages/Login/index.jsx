@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import FormRegister from '../../component/FormRegister';
 import './login.scss';
 import axios from 'axios';
+import {connect} from 'react-redux';
+import {userLogin} from '../../Redux/Actions/actions';
 
 function Login(props) {
     const [email, setEmail] = useState('');
@@ -17,7 +19,10 @@ function Login(props) {
 
         axios.post('http://localhost:8080/users/auth',body).then(res=>{
             console.log(res)
-            localStorage.setItem('authorization',res.headers.authorization);
+            const user ={
+                ...res.data,
+                token:res.headers.authorization
+            };
         }).catch(console.error)
     }
         return (
@@ -50,5 +55,20 @@ function Login(props) {
         );
    
 }
+const mapStateToProps = ( state, props) => {
 
-export default Login;
+    return {
+        user: state.user
+    }
+};
+
+const mapDispatchToProps = (dispatch, props) => {
+
+    return {
+  
+      userLogin: (user) => dispatch( userLogin( user)),
+    }
+}
+
+export default connect( mapStateToProps, mapDispatchToProps)(Login);
+
