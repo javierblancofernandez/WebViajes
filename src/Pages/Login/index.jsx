@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import FormRegister from '../../component/FormRegister';
 import './login.scss';
+
 import axios from 'axios';
+
 import {connect} from 'react-redux';
-import {userLogin} from '../../Redux/Actions/actions';
+import {addUserLogin} from '../../Redux/Actions/actions';
 
 function Login(props) {
     const [email, setEmail] = useState('');
@@ -23,8 +25,10 @@ function Login(props) {
                 ...res.data,
                 token:res.headers.authorization
             };
+            props.userLogin(user);
         }).catch(console.error)
     }
+    
         return (
             <div className="login">
 
@@ -66,7 +70,7 @@ const mapDispatchToProps = (dispatch, props) => {
 
     return {
   
-      userLogin: (user) => dispatch( userLogin( user)),
+      userLogin: (user) => dispatch( addUserLogin( user)),
     }
 }
 

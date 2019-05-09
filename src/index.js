@@ -5,7 +5,7 @@ import AppRouter from './AppRouter';
 import * as serviceWorker from './serviceWorker';
 
 import {Provider} from 'react-redux';
-import createStore from './Redux/createStorage';
+import createStore from './Redux/createStore';
 
 const store = createStore();
 

@@ -4,7 +4,7 @@ import Viaje from './viaje';
 function Viajes(props) {
 
     return (
-        <div className="container">
+        <div className="container" id="destinos">
             <div className="row1">
                 <Viaje
                     price="130"

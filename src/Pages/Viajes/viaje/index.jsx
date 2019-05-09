@@ -13,7 +13,7 @@ function Viaje(props) {
     }
 
     return (
-        <div className="travel-container">
+        <div className="travel-container" >
             <div className="travel-foto" style={styleImg}>
                 <div className="offer">
                     <p>{props.offer}</p>

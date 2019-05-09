@@ -5,8 +5,8 @@ import './quienes.scss';
 function QuienesSomos() {
 
        return (
-              <div className="fondoContenedor" id="quienesSomos" >
-                     <div className="contenedor" >
+              <div className="fondoContenedor" id="quienesomos" >
+                     <div className="contenedor"  >
                             <div className= "quienesSomos" >
                                    <h2>Quienes Somos</h2>
                                    <p>  En travels es una agencia de viaje online creada em 2009 por un equivo de viajeros

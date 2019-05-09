@@ -6,7 +6,7 @@ class Header extends React.Component {
     render() {
         return (
 
-            <div className="container">
+            <div className="container" id="home">
                 <div className="isla">
                     <h1>Viaja!</h1>
                     <h3>Descubre lugares maravillosos</h3>
